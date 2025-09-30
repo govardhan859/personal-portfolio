@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Govardhan Sanaboina | Data & Web Portfolio</title>
+    
+    <!-- Link to external CSS for styling -->
+    <link rel="stylesheet" href="lio.css"> 
+
+    <!-- External Resources -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-text">Govardhan <span class="accent">S.</span></div>
+                <div class="loading-subtitle">Initializing Portfolio Matrix...</div>
+            </div>
+            <div class="loading-animation">
+                <div class="loading-bar">
+                    <div id="loading-progress" class="loading-progress"></div>
+                </div>
+                <div id="loading-percentage" class="loading-percentage">0%</div>
+            </div>
+            <div class="loading-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content">
+        <!-- Particle Background Placeholder (Controlled by CSS) -->
+        <div id="particles-canvas"></div>
+        
+        <!-- Navigation -->
+        <header class="header">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <h1 class="brand-text">G. Sanaboina</h1>
+                </div>
+                <ul id="nav-menu" class="nav-menu">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Internships</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div id="hamburger" class="hamburger" aria-label="Toggle navigation menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hello, I'm</span>
+                        <div class="profile-photo-centered">
+                            <div class="profile-image-hero">
+                                <div class="profile-img">GS</div>
+                                <div class="online-status"></div>
+                            </div>
+                        </div>
+                        <span class="name">Govardhan Sanaboina</span>
+                        <!-- Placeholder CV Download Button -->
+                        <div class="cv-download-section">
+                            <a href="#" class="btn btn-cv-download" aria-label="Download Resume (Link Placeholder)">
+                                <i class="fas fa-download"></i>
+                                Download CV (Placeholder)
+                            </a>
+                        </div>
+                    </h1>
+                    <p class="hero-subtitle">
+                        <span id="typewriter" class="typewriter" data-text="Data Analysis | Web Development | IoT and Embedded Systems"></span>
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://linkedin.com/in/govardhan-sanaboina-089582252" target="_blank" class="btn btn-primary" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com" target="_blank" class="btn btn-secondary" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            GitHub (Placeholder)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text slide-in-left">
+                        <p class="about-description">
+                            I am Govardhan Sanaboina, a dynamic B.Tech student with a strong passion for **Data Science** and **Full-Stack Development**. I am currently pursuing my degree at Vishnu Institute of Technology, maintaining an **8.2 CGPA**.
+                            <br><br>
+                            My objective is to secure a position in a reputed organization where I can leverage my technical skills in **Python, SQL, and PowerBI** for robust data solutions, alongside my proficiency in web technologies like **ReactJS** for building compelling applications.
+                        </p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="8.2">8.2</span>
+                                <span class="stat-label">CGPA</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="2">2</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="2">2</span>
+                                <span class="stat-label">Internships</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual slide-in-right">
+                        <div class="profile-card">
+                            <div class="profile-image">
+                                <div class="avatar-placeholder">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                            </div>
+                            <div class="profile-info">
+                                <h3>Vishnu Institute of Technology</h3>
+                                <p>B.Tech | 2022 - Present</p>
+                                <p class="text-xs">Poduru, Andhra Pradesh</p>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h3 class="text-xl font-semibold mb-2 text-center" style="color:var(--primary-color);">Soft Skills:</h3>
+                            <ul class="flex flex-wrap justify-center gap-3 list-none p-0 m-0">
+                                <li class="skill-tag">Time Management</li>
+                                <li class="skill-tag">Work Ethic</li>
+                                <li class="skill-tag">Team Management</li>
+                                <li class="skill-tag">Problem Solving</li>
+                                <li class="skill-tag">Leadership</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="skills-content fade-in">
+                    <p class="skills-description">
+                        My technical foundation spans core programming and specialized tools essential for modern data and web engineering.
+                    </p>
+                    <div class="skills-grid-clean">
+                        <!-- Technical Skills -->
+                        <div class="skill-item-clean">
+                            <i class="devicon-python-plain skill-logo-clean" style="font-size: 50px; color:#3776ab;"></i>
+                        </div>
+                        <div class="skill-item-clean">
+                            <i class="devicon-c-plain skill-logo-clean" style="font-size: 50px; color:#a8b9cc;"></i>
+                            <span class="skill-name-clean">C LANGUAGE</span>
+                        </div>
+                        <div class="skill-item-clean">
+                            <i class="devicon-sqldeveloper-plain skill-logo-clean" style="font-size: 50px; color:#cc2927;"></i>
+                            <span class="skill-name-clean">SQL</span>
+                        </div>
+                        <div class="skill-item-clean">
+                            <i class="devicon-react-original skill-logo-clean" style="font-size: 50px; color:#61dafb;"></i>
+                            <span class="skill-name-clean">REACT JS</span>
+                        </div>
+                        <div class="skill-item-clean">
+                            <i class="devicon-html5-plain skill-logo-clean" style="font-size: 50px; color:#e34c26;"></i>
+                            <span class="skill-name-clean">HTML</span>
+                        </div>
+                        <div class="skill-item-clean">
+                            <i class="devicon-css3-plain skill-logo-clean" style="font-size: 50px; color:#2965f1;"></i>
+                            <span class="skill-name-clean">CSS</span>
+                        </div>
+                        <div class="skill-item-clean">
+                            <i class="devicon-javascript-plain skill-logo-clean" style="font-size: 50px; color:#f0db4f;"></i>
+                            <span class="skill-name-clean">JAVASCRIPT</span>
+                        </div>
+                        <div class="skill-item-clean">
+                            <img src="https://logos-world.net/wp-content/uploads/2022/02/Microsoft-Power-BI-Symbol.png" alt="Power BI" class="skill-logo-clean powerbi-logo">
+                            <span class="skill-name-clean">POWER BI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section (Internships) -->
+        <section id="experience" class="experience section">
+            <div class="container">
+                <h2 class="section-title">Internship Experience</h2>
+                <div class="experience-content">
+                    <div class="timeline">
+                        <!-- Internship 1: Data Science -->
+                        <div class="timeline-item slide-in-left">
+                            <div class="timeline-marker">
+                                <div class="company-logo-marker"><i class="fas fa-chart-line"></i></div>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">SKILLDzire - Data Science</div>
+                                <h3>Data Science Internship</h3>
+                                <p>Successfully completed training focused on core data workflow and analytical fundamentals.</p>
+                                <ul class="list-disc list-inside text-sm text-gray-500 ml-4">
+                                    <li>Gained experience in **data preprocessing** and **statistical analysis**.</li>
+                                    <li>Learned **data visualization** techniques for drawing insights.</li>
+                                    <li>Covered **machine learning** fundamentals.</li>
+                                </ul>
+                                <div class="experience-skills mt-4">
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">Data Visualization</span>
+                                    <span class="skill-tag">Machine Learning</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Internship 2: ReactJS -->
+                        <div class="timeline-item slide-in-right">
+                            <div class="timeline-marker">
+                                <div class="company-logo-marker"><i class="fab fa-react"></i></div>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">ExcelR Edtech / APSCHE</div>
+                                <h3>Short-Term React.js Internship</h3>
+                                <p>Focused experience on the modern React.js framework for efficient frontend development.</p>
+                                <ul class="list-disc list-inside text-sm text-gray-500 ml-4">
+                                    <li>Practical understanding of **React component-based architecture**.</li>
+                                    <li>Gained exposure to building dynamic user interfaces.</li>
+                                </ul>
+                                <div class="experience-skills mt-4">
+                                    <span class="skill-tag">React.js</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">Web Development</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1: Personal Portfolio -->
+                    <div class="project-card-new fade-in">
+                        <div class="project-image-area">
+                             <div class="project-bg-image"><i class="fas fa-desktop"></i></div>
+                            <div class="project-logo-overlay">
+                                <i class="fab fa-js project-small-logo" style="color: #f0db4f;"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Personal Portfolio Site</h3>
+                            <p>Built a responsive personal site from scratch to showcase project highlights and professional background, emphasizing clean code structure.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS/SCSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Responsive Design</span>
+                            </div>
+                            <a href="#" target="_blank" class="project-link" aria-label="View Project on GitHub (Placeholder)">
+                                <i class="fab fa-github"></i>
+                                View Code
+                                <i class="fas fa-external-link-alt external-link-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Smart Assist for Golden Agers (IoT) -->
+                    <div class="project-card-new fade-in">
+                        <div class="project-image-area">
+                            <div class="project-bg-image"><i class="fas fa-heartbeat"></i></div>
+                            <div class="project-logo-overlay">
+                                <i class="fas fa-microchip project-small-logo" style="color: #00878F;"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Smart Assist for Golden Agers (IoT)</h3>
+                            <p>An IoT device designed to enhance elderly safety. It allows seniors to quickly contact emergency services with a simple push button.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Embedded C</span>
+                                <span class="tech-tag">Arduino Uno</span>
+                                <span class="tech-tag">GSM Module</span>
+                                <span class="tech-tag">IoT / Safety</span>
+                            </div>
+                            <a href="#" target="_blank" class="project-link" aria-label="View Project Details (Placeholder)">
+                                <i class="fas fa-book-open"></i>
+                                View Details
+                                <i class="fas fa-external-link-alt external-link-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profiles Section (Combined for brevity based on resume data) -->
+        <section id="profiles" class="profiles section">
+            <div class="container">
+                <h2 class="section-title">Connect</h2>
+                <div class="profiles-content">
+                    <div class="profile-category slide-in-left">
+                        <h3>Professional Links</h3>
+                        <div class="profile-grid-clean">
+                            <a href="https://linkedin.com/in/govardhan-sanaboina-089582252" target="_blank" class="profile-link-clean linkedin-profile" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com" target="_blank" class="profile-link-clean github-profile" rel="noopener noreferrer" aria-label="GitHub Profile (Placeholder)">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <!-- Placeholder for a coding platform like LeetCode -->
+                            <a href="#" target="_blank" class="profile-link-clean" style="color: #059669;" rel="noopener noreferrer" aria-label="Coding Profile (Placeholder)">
+                                <i class="fas fa-code"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="profile-category slide-in-right">
+                        <h3>Personal Information</h3>
+                        <div class="profile-grid-clean">
+                            <a href="mailto:govardhansanaboina@gmail.com" class="profile-link-clean" style="color: #EA4335;" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="tel:+918096689859" class="profile-link-clean" style="color: #34A853;" aria-label="Phone">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <div class="profile-link-clean location-profile" aria-label="Location">
+                                <i class="fas fa-map-marker-alt" style="color: #00d4ff;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info slide-in-left">
+                        <h3>Let's Collaborate</h3>
+                        <p>I am actively looking for opportunities in Data Analysis and Web Development. Feel free to reach out directly via email or phone, or send a message using the form!</p>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope" style="color: #EA4335;"></i>
+                                <div>
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:govardhansanaboina@gmail.com">govardhansanaboina@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="fas fa-phone" style="color: #34A853;"></i>
+                                <div>
+                                    <span class="contact-label">Phone</span>
+                                    <a href="tel:+918096689859">+91 80966 89859</a>
+                                
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt" style="color: #00d4ff;"></i>
+                                <div>
+                                    <span class="contact-label">Location</span>
+                                    <span>Poduru, Andhra Pradesh, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-section slide-in-right">
+                        <h3>Send a Quick Message</h3>
+                        <!-- Form is functional only in a full deployment environment -->
+                        <form class="contact-form" onsubmit="event.preventDefault(); showMessageModal();">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Custom Modal for Confirmation (replacing alert()) -->
+        <div id="message-modal" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: none; align-items: center; justify-content: center; z-index: 10001;">
+            <div style="background: var(--surface-color); padding: 30px; border-radius: 10px; text-align: center; max-width: 400px; box-shadow: var(--shadow-lg);">
+                <i class="fas fa-check-circle" style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 15px;"></i>
+                <h4 style="color: var(--text-primary); margin-bottom: 10px;">Message Sent!</h4>
+                <p style="color: var(--text-secondary); margin-bottom: 20px;">Thank you for reaching out. I will get back to you as soon as possible.</p>
+                <button onclick="document.getElementById('message-modal').style.display='none';" class="btn btn-secondary">Close</button>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-main">
+                        <p class="footer-tagline">
+                            © 2024 Govardhan Sanaboina | 
+                            <i class="fas fa-heart heart-icon"></i>
+                            Crafted with the requested HTML, CSS & JavaScript style.
+                        </p>
+                    </div>
+                    <div class="footer-copyright">
+                        <div class="copyright-section">
+                            <h4>Legal Information</h4>
+                            <p>All content is original work by Govardhan Sanaboina. Profile data is sourced directly from resume information.</p>
+                        </div>
+                        <div class="copyright-section">
+                            <h4>Technology Stack</h4>
+                            <p>Built with: HTML5, CSS3, ES6 JavaScript, Font Awesome Icons, Devicon, Google Fonts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
+
+    <!-- Link to external JavaScript for interactivity -->
+    <script src="lio.js"></script>
+</body>
+</html>
