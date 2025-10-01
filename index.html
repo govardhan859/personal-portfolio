@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Govardhan Sanaboina | Developer Portfolio</title>
+    <!-- Load Tailwind CSS for utility classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to external custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navigation Bar -->
+    <header class="sticky top-0 z-20 bg-bg-color/90 backdrop-blur-sm border-b border-gray-700/50">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold accent-text tracking-wider">Govardhan Sanaboina</h1>
+            <div class="hidden sm:flex space-x-6 text-sm">
+                <a href="#about" class="text-text-light hover:text-primary-color transition duration-200">About</a>
+                <a href="#education" class="text-text-light hover:text-primary-color transition duration-200">Education</a>
+                <!-- Updated order: Experience, Skills, Projects -->
+                <a href="#experience" class="text-text-light hover:text-primary-color transition duration-200">Experience</a>
+                <a href="#skills" class="text-text-light hover:text-primary-color transition duration-200">Skills</a>
+                <a href="#projects" class="text-text-light hover:text-primary-color transition duration-200">Projects</a>
+                <a href="#contact" class="text-text-light hover:text-primary-color transition duration-200">Contact</a>
+            </div>
+            <!-- Mobile Menu Toggle (Simplified for single-file design) -->
+            <button class="sm:hidden text-2xl accent-text" onclick="alert('Navigation links available below!')">☰</button>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- 1. HERO SECTION -->
+        <section id="hero" class="min-h-[85vh] flex items-center justify-center pt-16 pb-8">
+            <div class="text-center md:text-left">
+                <p class="text-xl text-text-muted mb-2">Hello, I'm</p>
+                <h2 class="text-6xl md:text-8xl font-black mb-4 hero-title">
+                    <span class="text-text-light">GOVARDHAN</span> <span class="accent-text">SANABOINA</span>
+                </h2>
+                <div class="text-3xl md:text-5xl font-light text-text-light hero-subtitle mb-8 min-h-[50px]">
+                    <span id="typing-text" class="font-bold"></span><span class="typing-cursor"></span>
+                </div>
+                <div class="space-x-4">
+                    <a href="#projects" class="inline-block py-3 px-8 text-lg font-semibold rounded-lg bg-accent-gradient text-bg-color hover:shadow-lg transition duration-300">
+                        View Projects
+                    </a>
+                    <a href="mailto:govardhansanaboina@gmail.com" class="inline-block py-3 px-8 text-lg font-semibold rounded-lg border-2 border-primary-color text-primary-color hover:bg-primary-color/10 transition duration-300">
+                        Hire Me
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. ABOUT SECTION (Now focused purely on narrative) -->
+        <section id="about" class="py-20 border-t border-gray-700/50">
+            <h3 class="text-4xl font-bold mb-12 border-b-4 border-primary-color/50 pb-2 inline-block">ABOUT ME</h3>
+            <div class="space-y-6">
+                <p class="text-lg text-text-light">
+                    I am Govardhan Sanaboina, a passionate B.Tech student committed to **Full Stack Development** and **IoT Systems**. My primary goal is to secure a position where I can apply my growing technical foundation and continuously enhance my knowledge.
+                </p>
+                <p class="text-lg text-text-muted">
+                    My expertise spans from front-end development (HTML, CSS, JavaScript, **ReactJS**) to back-end fundamentals and specialized areas like **Embedded C** for IoT and data analysis using **Python** and **PowerBI**. I thrive on complex problem-solving and contributing to organizational growth through innovative projects.
+                </p>
+            </div>
+        </section>
+        
+        <!-- 3. EDUCATION SECTION -->
+        <section id="education" class="py-20 border-t border-gray-700/50">
+            <h3 class="text-4xl font-bold mb-12 border-b-4 border-primary-color/50 pb-2 inline-block">ACADEMIC BACKGROUND</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Education Details -->
+                <div class="p-8 rounded-xl bg-card-bg border border-primary-color/50 card-shadow">
+                    <h4 class="text-xl font-bold mb-3 accent-text">BACHELOR OF TECHNOLOGY (B.Tech)</h4>
+                    <p class="text-text-light font-semibold">Vishnu Institute of Technology</p>
+                    <p class="text-sm text-text-muted">2022 - Present | 8.2 CGPA</p>
+
+                    <h4 class="text-xl font-bold mt-6 mb-3 accent-text">INTERMEDIATE</h4>
+                    <p class="text-text-light font-semibold">Aditya Junior College</p>
+                    <p class="text-sm text-text-muted">2020 - 2022 | 84.7%</p>
+                </div>
+                
+                <!-- Languages & Additional Info -->
+                <div class="p-8 rounded-xl bg-card-bg border border-gray-600/50 card-shadow">
+                    <h4 class="text-xl font-bold mb-3 accent-text">KEY FOCUS & LANGUAGES</h4>
+                    <p class="text-base text-text-muted mb-6">Focusing on core concepts across engineering and software development.</p>
+                    
+                    <h5 class="text-lg font-semibold accent-text mb-2">Languages Spoken</h5>
+                    <div class="flex flex-wrap gap-2 text-sm text-text-light">
+                        <span class="px-3 py-1 bg-gray-700 rounded-full">English</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full">Telugu</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full">Hindi</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. EXPERIENCE / INTERNSHIPS SECTION -->
+        <section id="experience" class="py-20 border-t border-gray-700/50">
+            <h3 class="text-4xl font-bold mb-12 border-b-4 border-primary-color/50 pb-2 inline-block">EXPERIENCE & INTERNSHIPS</h3>
+            
+            <div class="space-y-10">
+                
+                <!-- Internship 1: Data Science -->
+                <div class="p-8 rounded-xl bg-card-bg border border-gray-600/50 card-shadow">
+                    <div class="flex flex-col sm:flex-row justify-between items-start mb-2">
+                        <h4 class="text-2xl font-bold accent-text">Data Science Internship</h4>
+                        <p class="text-sm text-text-muted mt-1 sm:mt-0">SKILLDzire</p>
+                    </div>
+                    <p class="text-base font-semibold mb-4 text-text-light">Successfully completed program focused on real-world data application.</p>
+                    <ul class="list-disc list-inside space-y-2 text-text-muted ml-4">
+                        <li>Gained hands-on experience in **data preprocessing**, cleaning, and transformation techniques.</li>
+                        <li>Performed **statistical analysis** and generated meaningful insights from datasets.</li>
+                        <li>Developed skills in **data visualization** to communicate findings effectively.</li>
+                        <li>Introduced to **machine learning fundamentals** and basic modeling concepts.</li>
+                    </ul>
+                </div>
+                
+                <!-- Internship 2: ReactJS -->
+                <div class="p-8 rounded-xl bg-card-bg border border-gray-600/50 card-shadow">
+                    <div class="flex flex-col sm:flex-row justify-between items-start mb-2">
+                        <h4 class="text-2xl font-bold accent-text">ReactJS Short-Term Internship</h4>
+                        <p class="text-sm text-text-muted mt-1 sm:mt-0">ExcelR Edtech / APSCHE</p>
+                    </div>
+                    <p class="text-base font-semibold mb-4 text-text-light">Focused training on modern component-based front-end development.</p>
+                    <ul class="list-disc list-inside space-y-2 text-text-muted ml-4">
+                        <li>Acquired practical skills in building user interfaces using the **React library**.</li>
+                        <li>Learned component architecture, state management, and lifecycle methods.</li>
+                        <li>Collaborated in a short-term intensive program organized in partnership with **Andhra Pradesh State Council of Higher Education (APSCHE)**.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. SKILLS SECTION -->
+        <section id="skills" class="py-20 border-t border-gray-700/50">
+            <h3 class="text-4xl font-bold mb-12 border-b-4 border-primary-color/50 pb-2 inline-block">CORE SKILLS</h3>
+            
+            <div class="space-y-10">
+
+                <!-- TECHNICAL SKILLS (Grid Layout) -->
+                <div>
+                    <h4 class="text-2xl font-bold mb-6 accent-text">TECHNICAL STACK</h4>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+                        <!-- Python Card -->
+                        <div class="p-5 rounded-xl bg-card-bg border border-gray-600/50 card-shadow text-center">
+                            <div class="text-3xl mx-auto mb-3 accent-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M12 8l4 4-4 4-4-4 4-4z"/></svg>
+                            </div>
+                            <p class="font-bold text-lg">Python</p>
+                            <p class="text-xs text-text-muted">Data Analysis, Scripting</p>
+                        </div>
+                        <!-- React Card -->
+                        <div class="p-5 rounded-xl bg-card-bg border border-gray-600/50 card-shadow text-center">
+                            <div class="text-3xl mx-auto mb-3 accent-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto"><circle cx="12" cy="12" r="10"/><line x1="12" y1="2" x2="12" y2="22"/><path d="M14.61 8.52l-2.61 4.38-2.61-4.38"/><path d="M9.39 15.48l2.61-4.38 2.61 4.38"/></svg>
+                            </div>
+                            <p class="font-bold text-lg">ReactJS</p>
+                            <p class="text-xs text-text-muted">Front-End Development</p>
+                        </div>
+                        <!-- Web Dev Card -->
+                        <div class="p-5 rounded-xl bg-card-bg border border-gray-600/50 card-shadow text-center">
+                            <div class="text-3xl mx-auto mb-3 accent-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h2"/><path d="M8 17h4"/></svg>
+                            </div>
+                            <p class="font-bold text-lg">HTML/CSS/JS</p>
+                            <p class="text-xs text-text-muted">Core Web Fundamentals</p>
+                        </div>
+                        <!-- IoT/C Card -->
+                        <div class="p-5 rounded-xl bg-card-bg border border-gray-600/50 card-shadow text-center">
+                            <div class="text-3xl mx-auto mb-3 accent-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto"><path d="M22 10s-2 2-2 4 2 4 2 4H2s2-2 2-4-2-4-2-4z"/><path d="M4 14h16"/></svg>
+                            </div>
+                            <p class="font-bold text-lg">Embedded C</p>
+                            <p class="text-xs text-text-muted">IoT & Firmware</p>
+                        </div>
+                        <!-- SQL Card -->
+                        <div class="p-5 rounded-xl bg-card-bg border border-gray-600/50 card-shadow text-center">
+                            <div class="text-3xl mx-auto mb-3 accent-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/><path d="M3 19c0 1.66 4 3 9 3s9-1.34 9-3v-2"/></svg>
+                            </div>
+                            <p class="font-bold text-lg">SQL</p>
+                            <p class="text-xs text-text-muted">Database Management</p>
+                        </div>
+                        <!-- PowerBI Card -->
+                        <div class="p-5 rounded-xl bg-card-bg border border-gray-600/50 card-shadow text-center">
+                            <div class="text-3xl mx-auto mb-3 accent-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto"><path d="M3 3v18h18"/><rect x="7" y="10" width="4" height="7"/><rect x="15" y="14" width="4" height="3"/></svg>
+                            </div>
+                            <p class="font-bold text-lg">PowerBI / Data</p>
+                            <p class="text-xs text-text-muted">Analytics & Reporting</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- SOFT SKILLS (Now full width, stacked) -->
+                <div>
+                    <h4 class="text-2xl font-bold mt-12 mb-6 accent-text border-t border-gray-700/50 pt-8">SOFT SKILLS</h4>
+                    <div class="space-y-4">
+                        <div class="p-5 rounded-xl bg-card-bg border border-gray-600/50 card-shadow">
+                            <p class="font-bold text-lg">Problem Solving & Leadership</p>
+                            <p class="text-sm text-text-muted">Aptitude for identifying complex issues and guiding teams to effective solutions.</p>
+                        </div>
+                        <div class="p-5 rounded-xl bg-card-bg border border-gray-600/50 card-shadow">
+                            <p class="font-bold text-lg">Time Management & Work Ethic</p>
+                            <p class="text-sm text-text-muted">Proven ability to manage deadlines efficiently and maintain a strong commitment to quality work.</p>
+                        </div>
+                        <div class="p-5 rounded-xl bg-card-bg border border-gray-600/50 card-shadow">
+                            <p class="font-bold text-lg">Team Management</p>
+                            <p class="text-sm text-text-muted">Experience in coordinating tasks and fostering collaboration within development teams.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 6. PROJECTS SECTION (Now Stacked) -->
+        <section id="projects" class="py-20 border-t border-gray-700/50">
+            <h3 class="text-4xl font-bold mb-12 border-b-4 border-primary-color/50 pb-2 inline-block">PROJECTS</h3>
+            <!-- Changed from grid md:grid-cols-2 to space-y-10 for stacked layout -->
+            <div class="space-y-10"> 
+
+                <!-- Project 1: Personal Portfolio Site -->
+                <div class="p-8 rounded-xl bg-card-bg border border-primary-color/50 card-shadow">
+                    <h4 class="text-2xl font-bold mb-2 accent-text">Personal Portfolio Site</h4>
+                    <p class="text-sm mb-4 text-text-muted">Technologies: HTML, CSS, JavaScript</p>
+                    <ul class="list-disc list-inside space-y-2 text-text-muted ml-4 mb-4">
+                        <li>Built a responsive personal site from scratch to showcase project highlights and professional background, emphasizing clean code structure and modular design.</li>
+                        <li>Integrated smooth animations and interactive elements to enhance visual appeal and visitor engagement (like the typing effect on this page).</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-text-light">Web Dev</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-text-light">Responsive Design</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Smart Assist for Golden Agers -->
+                <div class="p-8 rounded-xl bg-card-bg border border-primary-color/50 card-shadow">
+                    <h4 class="text-2xl font-bold mb-2 accent-text">Smart Assist for Golden Agers</h4>
+                    <p class="text-sm mb-4 text-text-muted">Technologies: Embedded C, Arduino Uno, GSM Module</p>
+                    <p class="mb-6">
+                        The Smart Assist for Golden Agers is an IoT device designed to enhance elderly safety. Using an Arduino Uno and GSM module, it allows seniors to quickly contact emergency services with a simple push button, sending calls or SMS alerts for immediate assistance.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-text-light">IoT Development</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-text-light">Embedded Systems</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 7. CONTACT SECTION (ELABORATED with GitHub) -->
+        <section id="contact" class="py-20 border-t border-gray-700/50">
+            <h3 class="text-4xl font-bold mb-12 border-b-4 border-primary-color/50 pb-2 inline-block">GET IN TOUCH</h3>
+            
+            <div class="bg-card-bg p-8 md:p-12 rounded-xl card-shadow space-y-8">
+                <!-- Main CTA -->
+                <p class="text-3xl font-extrabold text-text-light text-center">
+                    Ready to collaborate? Let's build something impactful.
+                </p>
+
+                <!-- Contact Details Grid (Icons Smaller and Centered) -->
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4 border-t border-gray-700/50">
+                    
+                    <!-- Email Card -->
+                    <div class="text-center p-4">
+                        <a href="mailto:govardhansanaboina@gmail.com" class="text-xl accent-text hover:text-white transition duration-300 flex flex-col items-center">
+                            <!-- Email Icon (Inline SVG) - Reduced Size to 24x24 -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-1"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            <span class="font-bold">Email</span>
+                        </a>
+                        <p class="text-xs text-text-muted mt-0">govardhansanaboina@gmail.com</p>
+                    </div>
+
+                    <!-- Phone Card -->
+                    <div class="text-center p-4">
+                        <a href="tel:+918096689859" class="text-xl accent-text hover:text-white transition duration-300 flex flex-col items-center">
+                            <!-- Phone Icon (Inline SVG) - Reduced Size to 24x24 -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-1"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-4.88-4.88A19.79 19.79 0 0 1 2 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <span class="font-bold">Phone</span>
+                        </a>
+                        <p class="text-xs text-text-muted mt-0">+91 80966 89859</p>
+                    </div>
+
+                    <!-- LinkedIn Card -->
+                    <div class="text-center p-4">
+                        <a href="https://linkedin.com/in/govardhan-sanaboina-089582252" target="_blank" class="text-xl accent-text hover:text-white transition duration-300 flex flex-col items-center">
+                            <!-- LinkedIn Icon (Inline SVG) - Reduced Size to 24x24 -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-1"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            <span class="font-bold">LinkedIn</span>
+                        </a>
+                        <p class="text-xs text-text-muted mt-0">profile link</p>
+                    </div>
+
+                    <!-- GitHub Card -->
+                    <div class="text-center p-4">
+                        <a href="https://github.com/govardhan859" target="_blank" class="text-xl accent-text hover:text-white transition duration-300 flex flex-col items-center">
+                            <!-- GitHub Icon (Inline SVG) - Reduced Size to 24x24 -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-1"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.44-.78-3.5.2-.6.7-1.4 0-2.2-2.3-2.6-5.6-1-7 2.7-.6-.2-1.2-.3-1.9-.3s-1.3.1-1.9.3c-1.4-3.7-4.7-5.3-7-2.7-.7.8-.2 1.6 0 2.2-.5.8-.8 2-.7 3.2 0 3.5 3 5.5 6 5.5-1 1.2-1.5 2.5-1.5 4v4"/><path d="M9 18c-4.51 2-5-1.41-5-1.41"/></svg>
+                            <span class="font-bold">GitHub</span>
+                        </a>
+                        <p class="text-xs text-text-muted mt-0">View Repositories</p>
+                    </div>
+                </div>
+
+                <!-- Call to Action Buttons -->
+                <div class="flex justify-center pt-6 border-t border-gray-700/50">
+                    <a href="mailto:govardhansanaboina@gmail.com" class="py-3 px-10 text-lg font-semibold rounded-lg bg-accent-gradient text-bg-color hover:shadow-lg transition duration-300">
+                        Send a Message
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-10 py-12 bg-card-bg border-t border-primary-color/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            
+            <div class="grid md:grid-cols-3 gap-8 text-sm">
+                
+                <!-- Legal Information -->
+                <div>
+                    <h4 class="font-bold accent-text mb-2">Legal Information</h4>
+                    <p class="text-text-muted mb-2">
+                        &copy; 2025 Govardhan Sanaboina. All rights reserved. No part of this portfolio may be reproduced, distributed, or transmitted without prior written permission.
+                    </p>
+                    <p class="text-text-muted">
+                        This portfolio is for professional purposes only. Contact information is provided for legitimate business inquiries.
+                    </p>
+                </div>
+
+                <!-- Technology Stack -->
+                <div>
+                    <h4 class="font-bold accent-text mb-2">Technology Stack</h4>
+                    <ul class="space-y-1 text-text-muted">
+                        <li>Built with modern web technologies: **HTML5**, **CSS3**, **JavaScript ES6+**.</li>
+                        <li>Styled using **CSS**.</li>
+                        <li>Uses **Google Fonts** (Inter) and **Inline SVGs** for icons.</li>
+                    </ul>
+                </div>
+
+                <!-- Third-Party Resources -->
+                <div>
+                    <h4 class="font-bold accent-text mb-2">Resource Attributions</h4>
+                    <ul class="space-y-1 text-text-muted">
+                        <li>Icons provided by **Lucide** (inline SVGs).</li>
+                        <li>Fonts sourced from **Google Fonts**.</li>
+                        <li>*Profile images sourced from Pexels (Note: Placeholder image assumed).*</li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <!-- Bottom Line Copyright -->
+            <div class="mt-10 pt-4 border-t border-gray-700/50 text-center">
+                <p class="text-xs text-text-muted">
+                    © 2025 Govardhan Sanaboina | Crafted with passion using HTML, CSS & JavaScript
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
